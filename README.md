@@ -25,34 +25,34 @@ L'objectif de ce TP est de développer un jeu de memory simple en utilisant HTML
 ### Partie JavaScript
 
 1. **Création des cartes** :
-   - Créez un tableau `cards` contenant des paires de caractères ('A', 'A', 'B', 'B', ...) qui seront les faces des cartes.
+   - Créez un tableau `cartes` contenant des paires de caractères ('A', 'A', 'B', 'B', ...) qui seront les faces des cartes.
    - Mélangez aléatoirement ce tableau pour que l'ordre des cartes soit aléatoire à chaque partie.
   
 ```js
 // Exemple de mélange des cartes
-cards.sort(() => Math.random() - 0.5);
+cartes.sort(() => Math.random() - 0.5);
 ```
 
 2. **Création des variables nécessaires** :
    - Des variables pour chaque élément HTML à manipuler (conteneur de jeu, éléments textes pour le décompte des paires et les messages de succès).
-   - Un tableau _flippedCards_ pour stocker temporairement les cartes retournées par l'utilisateur. Cela permet de comparer si les deux cartes sélectionnées correspondent.
-   - Un tableau _matchedCards_ pour stocker les cartes correspondantes. Une fois que deux cartes correspondent, elles sont ajoutées à ce tableau.
+   - Un tableau _cartesRetournees_ pour stocker temporairement les cartes retournées par l'utilisateur. Cela permet de comparer si les deux cartes sélectionnées correspondent.
+   - Un tableau _cartesTrouvees_ pour stocker les cartes correspondantes. Une fois que deux cartes correspondent, elles sont ajoutées à ce tableau.
    - Un compteur pour suivre le nombre de mouvements effectués par l'utilisateur.
 
      
 3. **Création des fonctions** :
-   - Une fonction pour créer les éléments des cartes _card_ utilisant des méthodes déjà connues (_createElement_, _textContent_, _appendChild_, ajout de class). Ajouter un écouteur d'événements pour gérer le clic sur la carte : lorsque la carte est cliquée, la fonction flipCard est appelée avec la carte en paramètre
+   - Une fonction pour créer les éléments des cartes _carte_ utilisant des méthodes déjà connues (_createElement_, _textContent_, _appendChild_, ajout de class). Ajouter un écouteur d'événements pour gérer le clic sur la carte : lorsque la carte est cliquée, la fonction retournerCarte est appelée avec la carte en paramètre
    
    ```js
    // Fonction pour créer les éléments des cartes
-   function createCard(value, index) {
+   function creerCarte(valeur, index) {
    }
    ```
 
    - Une fonction pour retourner une carte. Gérez le retournement des cartes en ajoutant/enlevant une classe CSS lorsque l'utilisateur clique sur une carte.
    ```js
    // Fonction pour retourner une carte
-   function flipCard(card) {
+   function retournerCarte(carte) {
    }
    ```
 
@@ -60,7 +60,7 @@ cards.sort(() => Math.random() - 0.5);
      
    ```js
    // Fonction pour vérifier si les cartes retournées correspondent
-   function checkMatch() {
+   function verifierPaire() {
    }
    ```
 
