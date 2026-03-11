@@ -2,8 +2,8 @@
 body {
     font-family: "Truculenta", sans-serif;   
     height: 100vh;
-    background: #eee;
     color: #222; 
+    /* Choisissez votre 'background' */
 }
 
 h2 {
