@@ -1,47 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
 body {
     font-family: "Truculenta", sans-serif;   
+    height: 100vh;
+    background: #eee;
+    color: #222; 
 }
+
+h2 {
+    text-align: center;
+}
+
 
 * {
     box-sizing: border-box;
 }
 
-/* CONTENEUR */
-  .game-container {
-
+/* CONTENEUR DU PLATEAU DE JEU */
+  
+.game-container {
+    /* Créer une flexbox de 450px de largeur centrée sur la page */
+    /* Prévoir un flex-wrap */
   }
 
 
 /* CARD */
 /* 
-Vous pouvez utiliser ce lien comme image de fond : 
-https://jaimelallemand.fr/img/memory/quizy-mg-item-topxs.jpg.png
+Vous pouvez utiliser ce lien comme image de fond : https://jaimelallemand.fr/img/memory/quizy-mg-item-topxs.jpg.png
 Ou choisir votre image personnalisée !
 */
 
 .card {
-
+    /* 100px x 100px */
+    /* Centrer le contenu avec justify-content et align-items */
+    /* Ajouter une image de fond et une couleur de fond blanche */
+     /* Ajouter une bordure à vos cartes */
+    display: inline-flex;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 5px;
+    color: transparent; /* Permet de cacher le texte de la carte */
 }
 
 
-/* Class ajoutée au retournement */
+/* C'est la class ajoutée au retournement */
 .flipped {
-
+    /* Passer le texte en  noir */
+    /* Supprimer l'image de fond */
+    /* Changer la couleur de fond */
 }
 
 /* Message de succès */
 .success {
-
+    /* Ajouter une couleur de fond flashy pour les paires validées */
 }
 
 /* Zone du message de succès */
 /* Cette zone est à cacher en CSS et à montrer en JS */
 #successText {
-
+    /* Même largeur que le conteneur de jeu */
+    /* Ajouter une bordure */
+    /* Cacher en CSS */
+    margin: 20px auto;
+    padding: 5px;
 }
 
 /* Zone du compteur */
 #matchesCount {
-
+    /* Même largeur que le conteneur de jeu */
+    /* Ajouter une bordure */
+    margin: 20px auto;
+    padding: 5px;
 }
