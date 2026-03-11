@@ -2,7 +2,7 @@
 
 ## Objectif
 
-L'objectif de ce TP est de développer un jeu de memory simple en utilisant HTML, CSS et JavaScript. Le jeu consistera à retourner des cartes deux par deux pour trouver des paires correspondantes. L'utilisateur gagne lorsque toutes les paires ont été trouvées.
+L'objectif de ce TP est de développer un jeu de memory simple en utilisant HTML, CSS et JavaScript. Le jeu consistera à retourner des cartes deux par deux pour trouver des paires correspondantes. L'utilisateur gagne lorsque toutes les paires ont été trouvées.  
 
 ![Exemple de memory](https://sebastien-devos.fr/img/codegt/memory.jpg)
 
